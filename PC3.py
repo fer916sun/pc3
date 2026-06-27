@@ -40,12 +40,12 @@ import streamlit.components.v1 as components
 
 # Menú vertical en una barra lateral
 # Crea una barra lateral (sidebar) en la aplicación.
-with st.sidebar:
-    opciones = option_menu(None, ['Inicio', 'Experiencia', 'Gráficos'], 
-        icons=['camera reels fill', 'stars', 'brilliance'], menu_icon=None, default_index=0)
-    # Crea un menú de opciones dentro de la barra lateral -> option_menu(...)
+# with st.sidebar:
+    # slected = option_menu(None, ['Inicio', 'Experiencia', 'Gráficos'], 
+        # icons=['camera reels fill', 'stars', 'brilliance'], menu_icon=None, default_index=0)
+    # Crea un menú de slected dentro de la barra lateral -> option_menu(...)
     # Título que se mostrará encima del menú -> "Selecciona una sección: "
-    # Lista de opciones disponibles para navegar -> ['Inicio', 'Experiencia', 'Gráficos']
+    # Lista de slected disponibles para navegar -> ['Inicio', 'Experiencia', 'Gráficos']
     # Iconos asociados a cada opción del menú -> ['0-circle','1-circle', '2-circle']
     # Icono principal que aparece junto al título del menú -> menu_icon="filetype-py"
     # Opción seleccionada por defecto (0 = Inicio) -> default_index=0
@@ -57,17 +57,17 @@ selected = option_menu(
     menu_title="Mi información: ", 
     options=['Inicio', 'Experiencia', 'Gráficos'], 
     icons=['camera reels fill', 'stars', 'brilliance'], 
-    menu_icon="cast", default_index=0, orientation="horizontal")
-    # Título que aparece antes de las opciones del menú -> menu_title="Selecciona una sección: "
-    # Lista de opciones que estarán disponibles en el menú -> ['Inicio', 'Experiencia', 'Gráficos']
+    menu_icon=None, default_index=0, orientation="horizontal")
+    # Título que aparece antes de las slected del menú -> menu_title="Selecciona una sección: "
+    # Lista de slected que estarán disponibles en el menú -> ['Inicio', 'Experiencia', 'Gráficos']
     # Iconos asociados a cada opción del menú -> ['person-heart', 'stars', 'brilliance']
     # Icono principal que aparece junto al título del menú -> menu_icon="cast"
     # Opción seleccionada por defecto (0 = Inicio) -> default_index=0
     # Hace que el menú se muestre horizontalmente en lugar de verticalmente -> orientation="horizontal"
 
 # Verifica si el usuario ha seleccionado la opción "Inicio" en el menú de navegación horizontal.
-# OJO: En caso que elijas el menú de la barra lateral (sidebar) debes cambiar "selected" por "opciones"
-if opciones == 'Inicio':
+# OJO: En caso que elijas el menú de la barra lateral (sidebar) debes cambiar "selected" por "slected"
+if selected == 'Inicio':
     st.markdown("<h1 style='text-align: center;'>Mi blog</h1>", unsafe_allow_html=True)
     # Muestra un título principal utilizando HTML -> st.markdown("...", unsafe_allow_html=True)
     # La etiqueta <h1> define un encabezado de nivel 1 -> "<h1 ...>...</h1>"
@@ -78,20 +78,20 @@ if opciones == 'Inicio':
     col1, col2 = st.columns(2)
 
     # Muestra una imagen en la primera columna
-    col1.image("ellie.png", caption='Ellie', width=300)
+    col1.image("fotpc3.png", caption='Fernanda', width=300)
     # "ellie.png" es el archivo de imagen que se visualizará -> Aquí debes reemplazar por tu foto de perfil
     # El texto "Ellie" aparecerá como descripción de la imagen
     # width=300 establece el ancho de la imagen en 300 píxeles
 
     # Define una cadena de texto multilínea que contiene una guía para redactar una presentación personal.
     texto = """
-    Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres?, 
-    ¿De dónde eres?, 
-    ¿Qué estudias?, 
-    ¿Qué te gusta de tu carrera?, 
-    ¿Qué te gustaría hacer en el futuro?, 
-    ¿Qué te gusta hacer en tu tiempo libre?
+    Soy Fernanda y tengo 19 años, nací en Lima y vivo en Comas.
+    Estudio Publicidad, voy en el 5to ciclo y me gusta mucho mi carrera porque me permite ser creativa y aprender cosas nuevas.
+    Me gustaría trabajar de creativa en empresas o ser freelancer y crear campañas publicitarias innovadoras. 
+    También me gusta mucho el arte y la música, en mi tiempo libre suelo dibujar y escuchar mis canciones favoritas.
+    Mi color favorito es el verde y me gusta mucho la naturaleza, por eso disfruto salir a caminar y explorar nuevos lugares.
+    Mi pokemón favorito es Piplup porque es muy tierno y me gustan los pinguinos.
+    En el futuro me gustaría viajar por el mundo y conocer diferentes culturas y aprender nuevos idiomas.
     """
 
     # Muestra el texto en la segunda columna utilizando HTML
@@ -100,17 +100,18 @@ if opciones == 'Inicio':
     # f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>"
     # unsafe_allow_html=True permite que Streamlit interprete las etiquetas HTML incluidas en la cadena
 
-elif opciones == 'Experiencia':
-    st.markdown("<h1 style='text-align: center;'>Nombre a la sección de experiencia 💻</h1>", unsafe_allow_html=True)
+elif selected == 'Experiencia':
+    st.markdown("<h1 style='text-align: center;'>Mi experiencia programando</h1>", unsafe_allow_html=True)
 
     # Agregar un  texto para la respuesta
     texto_2 = """
-    Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio?, 
-    ¿Qué te ha enseñado la programación?, 
-    ¿Qué te gusta de programar?, 
-    ¿Qué te gustaría hacer con la programación en el futuro?
-    ¿Cómo se relaciona lo que haz aprendido con tu carrera?
+    Mi experiencia aprendiendo a programar ha sido muy interesante y un reto. LLegué casi sin conocimientos previos y al principio
+    me sentí un poco abrumada por la cantidad de conceptos nuevos que tenía que aprender.
+    Pero ya me he familiarizado con estos conceptos y he aprendido a resolver problemas de manera lógica y ordenada.
+    Me gusta mucho la programación porque me permite crear cosas nuevas y es muy curioso ver como se ejecuten los códigos.
+    Me gustaría seguir aprendiendo y mejorar mis habilidades para poder desarrollar proyectos más complejos en el futuro.
+    Se relaciona con mi carrera porque la publicidad cada vez depende más de la tecnología y la programación,
+    y tener conocimientos en este campo me permite tener una ventaja competitiva y poder crear campañas más innovadoras y efectivas.
     """
 
     # Mostramos el texto
@@ -119,31 +120,34 @@ elif opciones == 'Experiencia':
     # Formato A
     # Agregamos todo los videos realizados en las prácticas anteriores
     # Muestra un subtítulo para identificar el contenido del video
-    st.subheader("🎥 Video 1 - YouTube")
+    st.subheader("🎥 Video 1 - Canva")
     # Inserta un video de YouTube directamente en la aplicación.
     # El usuario puede reproducirlo sin salir de Streamlit.
-    st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E")
+    st.video("pccpc1.mp4")
     # Agrega una breve descripción del video.
     st.caption(
-        "En este video se presenta ...., "
+        "En este video se presenta el desarrollo de un proyecto en Canva para mi Práctica Calificada 1." \
+        "Este video muestra una explicación de los operadores booleanos, de pertenencia y lógicos, y cómo se aplican en la programación, así como ejemplos prácticos de su uso." \
     )
 
     # Formato B
     # Muestra un subtítulo para identificar el contenido del video
-    st.subheader("🎥 Video 1 - Google Drive")
+    st.subheader("🎥 Video 2 - Canva")
     # Crea un botón que redirige al usuario a un video alojado en Google Drive. 
     # Al hacer clic, el video se abrirá en una nueva pestaña del navegador.
     st.link_button(
             "Ver video",
-            "https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link"
+            "https://canva.link/01obw2brnfahjre"
         )
+    st.video("pc2.mp4")
     # Agrega una breve descripción del video.
     st.caption(
-        "En este video se presenta ...., "
+        "En este video se presenta el desarrollo de un proyecto en Canva para mi Práctica Calificada 2." \
+        "Este video muestra una explicación de los operadores condicionales: if, elif y else. Se muestram también ejemplos prácticos de su uso." \
     )
 
-elif opciones == 'Gráficos':
-    st.markdown("<h2 style='text-align: center;'>Nombre a la sección 'Gráficos'</h2>", unsafe_allow_html=True)
+elif selected == 'Gráficos':
+    st.markdown("<h2 style='text-align: center;'>Gráficos hechos por mí (4 graf y 1 mapa))</h2>", unsafe_allow_html=True)
 
     graficos = ['Gráfico_1', 'Gráfico_2', 'Mapa_1']
 
