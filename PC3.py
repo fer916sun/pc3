@@ -219,7 +219,7 @@ elif selected == 'Gráficos':
 
         with col7:
             st.image(
-                "lengua_familia_GB.png",
+                "gbrm.png",
                 width=800
             )
     elif grafico_seleccionado == 'Mapa_1':
