@@ -156,7 +156,7 @@ elif selected == 'Gráficos':
     # Mostramos el gráfico seleccionado
     if grafico_seleccionado == 'Gráfico_1':
         # Título de la sección
-        st.subheader("📊 Gráfico 1: Lenguas aisladas")
+        st.subheader("📊 Gráfico 1: Lluvia de palabras Harry Potter")
 
         # Interpretación del gráfico
         st.markdown(
