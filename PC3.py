@@ -199,6 +199,29 @@ elif selected == 'Gráficos':
                 "lengua_familia_GB.png",
                 width=800
             )
+
+    elif grafico_seleccionado == 'Gráfico_3':
+        # Título de la sección
+        st.subheader("📊 Gráfico 2: Rendimiento Real Madrid Liga Española")
+
+        # Interpretación del gráfico
+        st.markdown(
+            """
+            <div style='text-align: justify; font-size: 18px;'>
+            Rendimiento del Real Madrid en la Liga Española
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+        # Centrar la imagen
+        col6, col7, col8 = st.columns([1, 5, 1])
+
+        with col7:
+            st.image(
+                "lengua_familia_GB.png",
+                width=800
+            )
     elif grafico_seleccionado == 'Mapa_1':
         # Título de la sección
         st.subheader("🗺️ Mapa 1: Distribución geográfica")
