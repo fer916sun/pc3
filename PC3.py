@@ -162,7 +162,7 @@ elif selected == 'Gráficos':
         st.markdown(
             """
             <div style='text-align: justify; font-size: 20px;'>
-            Aquí debe ir una breve interpretación de tu gráfico.
+            Gráfico de lluvia de palabras de un fragmento de Harry Potter.
             </div>
             """,
             unsafe_allow_html=True
