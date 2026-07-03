@@ -120,10 +120,10 @@ elif selected == 'Experiencia':
     # Formato A
     # Agregamos todo los videos realizados en las prácticas anteriores
     # Muestra un subtítulo para identificar el contenido del video
-    st.subheader("🎥 Video 1 - Canva")
+    st.subheader("🎥 Video 1 - YouTube")
     # Inserta un video de YouTube directamente en la aplicación.
     # El usuario puede reproducirlo sin salir de Streamlit.
-    st.video("pccpc1.mp4")
+    st.video("https://youtu.be/FHBf-vXDBus")
     # Agrega una breve descripción del video.
     st.caption(
         "En este video se presenta el desarrollo de un proyecto en Canva para mi Práctica Calificada 1." \
@@ -132,14 +132,14 @@ elif selected == 'Experiencia':
 
     # Formato B
     # Muestra un subtítulo para identificar el contenido del video
-    st.subheader("🎥 Video 2 - Canva")
+    st.subheader("🎥 Video 2 - YouTube")
     # Crea un botón que redirige al usuario a un video alojado en Google Drive. 
     # Al hacer clic, el video se abrirá en una nueva pestaña del navegador.
     st.link_button(
             "Ver video",
-            "https://canva.link/01obw2brnfahjre"
+            "https://youtu.be/WIw7eK9-YDg"
         )
-    st.video("pc2.mp4")
+    st.video("https://youtu.be/WIw7eK9-YDg")
     # Agrega una breve descripción del video.
     st.caption(
         "En este video se presenta el desarrollo de un proyecto en Canva para mi Práctica Calificada 2." \
