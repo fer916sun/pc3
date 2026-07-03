@@ -173,7 +173,7 @@ elif selected == 'Gráficos':
 
         with col4:
             st.image(
-                "aisladas_base_datos.png",
+                "lluvia.png",
                 width=800
             )
 
