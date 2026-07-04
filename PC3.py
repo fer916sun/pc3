@@ -224,20 +224,26 @@ elif selected == 'Gráficos':
             )
     elif grafico_seleccionado == 'Mapa_1':
         # Título de la sección
-        st.subheader("🗺️ Mapa 1: Distribución geográfica")
+        st.subheader("🗺️ Mapa 1: Locaciones de películas o series")
 
         # Interpretación del mapa
         st.markdown(
             """
             <div style='text-align: justify; font-size: 18px;'>
-            Aquí debe ir una breve interpretación del mapa.
+            Locaciones y datos de mi top 5 de películas favoritas.
+            TOP 5:
+            - Geotormenta 🌪
+            - A él no le gustas tanto 💔
+            - Un amor tan hermoso 💟
+            - Glee 🎤
+            - El diablo viste a la moda 👠
             </div>
             """,
             unsafe_allow_html=True
         )
 
         # Cargar el mapa HTML generado previamente
-        with open("mapa.html", "r", encoding="utf-8") as f:
+        with open("mapa_top5.html", "r", encoding="utf-8") as f:
             html_content = f.read()
 
         # Mostrar el mapa interactivo
