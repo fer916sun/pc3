@@ -179,13 +179,13 @@ elif selected == 'Gráficos':
 
     elif grafico_seleccionado == 'Gráfico_2':
         # Título de la sección
-        st.subheader("📊 Gráfico 2: Familias lingüísticas")
+        st.subheader("📊 Gráfico 2: Tarjetas Rojas Liga Española")
 
         # Interpretación del gráfico
         st.markdown(
             """
             <div style='text-align: justify; font-size: 18px;'>
-            Aquí debe ir una breve interpretación del gráfico.
+            Promedio de tarjetas rojas por equipo como local en la Liga Española.
             </div>
             """,
             unsafe_allow_html=True
