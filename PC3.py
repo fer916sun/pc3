@@ -156,13 +156,13 @@ elif selected == 'Gráficos':
     # Mostramos el gráfico seleccionado
     if grafico_seleccionado == 'Gráfico_1':
         # Título de la sección
-        st.subheader("📊 Gráfico 1: Lluvia de palabras Harry Potter\n")
+        st.subheader("📊 Gráfico 1: Lluvia de palabras Harry Potter")
 
         # Interpretación del gráfico
         st.markdown(
             """
             <div style='text-align: justify; font-size: 20px;'>
-            Gráfico de lluvia de palabras de un fragmento de Harry Potter.\n
+            Gráfico de lluvia de palabras de un fragmento de Harry Potter.
             </div>
             """,
             unsafe_allow_html=True
@@ -179,15 +179,13 @@ elif selected == 'Gráficos':
 
     elif grafico_seleccionado == 'Gráfico_2':
         # Título de la sección
-        st.subheader("📊 Gráfico 2: Tarjetas Rojas Liga Española
-        \n")
+        st.subheader("📊 Gráfico 2: Tarjetas Rojas Liga Española")
 
         # Interpretación del gráfico
         st.markdown(
             """
             <div style='text-align: justify; font-size: 18px;'>
             Promedio de tarjetas rojas por equipo como local en la Liga Española.
-            \n
             </div>
             """,
             unsafe_allow_html=True
@@ -204,14 +202,13 @@ elif selected == 'Gráficos':
 
     elif grafico_seleccionado == 'Gráfico_3':
         # Título de la sección
-        st.subheader("📊 Gráfico 2: Rendimiento Real Madrid Liga Española\n")
+        st.subheader("📊 Gráfico 2: Rendimiento Real Madrid Liga Española")
 
         # Interpretación del gráfico
         st.markdown(
             """
             <div style='text-align: justify; font-size: 18px;'>
             Rendimiento del Real Madrid en la Liga Española
-            \n
             </div>
             """,
             unsafe_allow_html=True
@@ -227,7 +224,7 @@ elif selected == 'Gráficos':
             )
     elif grafico_seleccionado == 'Mapa_1':
         # Título de la sección
-        st.subheader("🗺️ Mapa 1: Locaciones de películas o series\n")
+        st.subheader("🗺️ Mapa 1: Locaciones de películas o series")
 
         # Interpretación del mapa
         st.markdown(
