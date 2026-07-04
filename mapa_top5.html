@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7b150c50ecfe5d33a704ea0c52d03bd5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7b150c50ecfe5d33a704ea0c52d03bd5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7b150c50ecfe5d33a704ea0c52d03bd5 = L.map(
+                "map_7b150c50ecfe5d33a704ea0c52d03bd5",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3365a7747be202e1110a36d020f68170 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3365a7747be202e1110a36d020f68170.addTo(map_7b150c50ecfe5d33a704ea0c52d03bd5);
+        
+    
+            var marker_e8c714ec3eee98bef2d0573ee7e34382 = L.marker(
+                [29.9961, -89.9147],
+                {
+}
+            ).addTo(map_7b150c50ecfe5d33a704ea0c52d03bd5);
+        
+    
+        var popup_d4c5ec27c51cc5f765374ebf472fdef0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cec6f249326dbcb6c64e85ca7e9dccf6 = $(`<div id="html_cec6f249326dbcb6c64e85ca7e9dccf6" style="width: 100.0%; height: 100.0%;">Nombre: Geotormenta<br>Director: Dean Devlin<br>Año: 2017<br>Género: Acción/ Ciencia Ficción<br>Locación: NASA Michoud Assembly Facility, Nueva Orleans<br>Dato curioso: Es una instalación real de la NASA donde se construyeron partes del transbordador espacial.</div>`)[0];
+                popup_d4c5ec27c51cc5f765374ebf472fdef0.setContent(html_cec6f249326dbcb6c64e85ca7e9dccf6);
+            
+        
+
+        marker_e8c714ec3eee98bef2d0573ee7e34382.bindPopup(popup_d4c5ec27c51cc5f765374ebf472fdef0)
+        ;
+
+        
+    
+    
+            var marker_4eccc942ff88edddee9c866e3050825c = L.marker(
+                [39.2821, -76.5928],
+                {
+}
+            ).addTo(map_7b150c50ecfe5d33a704ea0c52d03bd5);
+        
+    
+        var popup_a87a3d614c3e966b2ead3c770f63c5d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac3f09a36357ecc262f11595425cc83d = $(`<div id="html_ac3f09a36357ecc262f11595425cc83d" style="width: 100.0%; height: 100.0%;">Nombre: A él no le gustas tanto<br>Director: Ken Kwapis<br>Año: 2009<br>Género: Comedia romántica/ Drama<br>Locación: Fells Point, Baltimore, Maryland<br>Dato curioso: La escena final de Ben Affleck y Jeniffer Aniston se filmó en Los Ángeles, lo demás en Baltimore</div>`)[0];
+                popup_a87a3d614c3e966b2ead3c770f63c5d9.setContent(html_ac3f09a36357ecc262f11595425cc83d);
+            
+        
+
+        marker_4eccc942ff88edddee9c866e3050825c.bindPopup(popup_a87a3d614c3e966b2ead3c770f63c5d9)
+        ;
+
+        
+    
+    
+            var marker_1ae17fdad2e127dc696e6ef0bb7528e2 = L.marker(
+                [35.8533, 128.5644],
+                {
+}
+            ).addTo(map_7b150c50ecfe5d33a704ea0c52d03bd5);
+        
+    
+        var popup_66a2012eab4fe1aeac1867a6b6f84217 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5033c5f3f1b30bc3eb2236009f9ab72a = $(`<div id="html_5033c5f3f1b30bc3eb2236009f9ab72a" style="width: 100.0%; height: 100.0%;">Nombre: Un amor tan hermoso<br>Director: Seo Min-jung<br>Año: 2020<br>Género: Drama escolar/ Romance<br>Locación: E-world, Daegu, Corea del Sur<br>Dato curioso: Este k-drama es un remake de una serie web china del 2017.</div>`)[0];
+                popup_66a2012eab4fe1aeac1867a6b6f84217.setContent(html_5033c5f3f1b30bc3eb2236009f9ab72a);
+            
+        
+
+        marker_1ae17fdad2e127dc696e6ef0bb7528e2.bindPopup(popup_66a2012eab4fe1aeac1867a6b6f84217)
+        ;
+
+        
+    
+    
+            var marker_9d70398b665b32fe1a570f3e8a3d11eb = L.marker(
+                [34.0837, -118.3194],
+                {
+}
+            ).addTo(map_7b150c50ecfe5d33a704ea0c52d03bd5);
+        
+    
+        var popup_2b26c49f31befc92e2b2fea9cb15faf0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_266d64e133b20a8691329794f02ac083 = $(`<div id="html_266d64e133b20a8691329794f02ac083" style="width: 100.0%; height: 100.0%;">Nombre: Glee<br>Director: Ryan Murphy<br>Año: 2009<br>Género: Musical/ Comedia dramática<br>Locación: Paramount Pictures Studios, Hollywood<br>Dato curioso: Debido a las largas grabaciones de baile y canto, los actores pasaban 2/3 del día en el set.</div>`)[0];
+                popup_2b26c49f31befc92e2b2fea9cb15faf0.setContent(html_266d64e133b20a8691329794f02ac083);
+            
+        
+
+        marker_9d70398b665b32fe1a570f3e8a3d11eb.bindPopup(popup_2b26c49f31befc92e2b2fea9cb15faf0)
+        ;
+
+        
+    
+    
+            var marker_25f31fa0df3351dabd2c71b7c2d2cc04 = L.marker(
+                [40.7576, -73.9851],
+                {
+}
+            ).addTo(map_7b150c50ecfe5d33a704ea0c52d03bd5);
+        
+    
+        var popup_aac62ee523836cdf50b5e8ff8830d40a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ddcab11d8ba196b05236b464d4f06861 = $(`<div id="html_ddcab11d8ba196b05236b464d4f06861" style="width: 100.0%; height: 100.0%;">Nombre: El diablo viste a la moda<br>Director: David Frankel<br>Año: 2006<br>Género: Drama/ Comedia<br>Locación: Edificio McGraw-Hill, Manhattan, Nueva York<br>Dato curioso: Meryl Streep donó todo su guardarropa de diseñador a una subasta benéfica tras terminar el rodaje.</div>`)[0];
+                popup_aac62ee523836cdf50b5e8ff8830d40a.setContent(html_ddcab11d8ba196b05236b464d4f06861);
+            
+        
+
+        marker_25f31fa0df3351dabd2c71b7c2d2cc04.bindPopup(popup_aac62ee523836cdf50b5e8ff8830d40a)
+        ;
+
+        
+    
+</script>
+</html>
