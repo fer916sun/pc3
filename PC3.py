@@ -179,13 +179,15 @@ elif selected == 'Gráficos':
 
     elif grafico_seleccionado == 'Gráfico_2':
         # Título de la sección
-        st.subheader("📊 Gráfico 2: Tarjetas Rojas Liga Española\n")
+        st.subheader("📊 Gráfico 2: Tarjetas Rojas Liga Española
+        \n")
 
         # Interpretación del gráfico
         st.markdown(
             """
             <div style='text-align: justify; font-size: 18px;'>
-            Promedio de tarjetas rojas por equipo como local en la Liga Española.\n
+            Promedio de tarjetas rojas por equipo como local en la Liga Española.
+            \n
             </div>
             """,
             unsafe_allow_html=True
@@ -208,7 +210,8 @@ elif selected == 'Gráficos':
         st.markdown(
             """
             <div style='text-align: justify; font-size: 18px;'>
-            Rendimiento del Real Madrid en la Liga Española\n
+            Rendimiento del Real Madrid en la Liga Española
+            \n
             </div>
             """,
             unsafe_allow_html=True
