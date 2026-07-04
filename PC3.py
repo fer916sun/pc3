@@ -230,7 +230,7 @@ elif selected == 'Gráficos':
         st.markdown(
             """
             <div style='text-align: justify; font-size: 18px;'>
-            Locaciones y datos de mi top 5 de películas favoritas\n
+            Locaciones y datos de mi top 5 de películas favoritas. \n
             TOP 5:\n
             - Geotormenta 🌪\n
             - A él no le gustas tanto 💔\n
