@@ -147,7 +147,7 @@ elif selected == 'Experiencia':
     )
 
 elif selected == 'Gráficos':
-    st.markdown("<h2 style='text-align: center;'>Gráficos hechos por mí (4 graf y 1 mapa))</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center;'>Gráficos hechos por mí</h2>", unsafe_allow_html=True)
 
     graficos = ['Gráfico_1', 'Gráfico_2', 'Gráfico_3', 'Mapa_1']
 
@@ -230,13 +230,13 @@ elif selected == 'Gráficos':
         st.markdown(
             """
             <div style='text-align: justify; font-size: 18px;'>
-            Locaciones y datos de mi top 5 de películas favoritas.
-            TOP 5:
-            - Geotormenta 🌪
-            - A él no le gustas tanto 💔
-            - Un amor tan hermoso 💟
-            - Glee 🎤
-            - El diablo viste a la moda 👠
+            Locaciones y datos de mi top 5 de películas favoritas.\n
+            TOP 5:\n
+            - Geotormenta 🌪\n
+            - A él no le gustas tanto 💔\n
+            - Un amor tan hermoso 💟\n
+            - Glee 🎤\n
+            - El diablo viste a la moda 👠\n
             </div>
             """,
             unsafe_allow_html=True
