@@ -1,0 +1,7 @@
+[theme]
+primaryColor="#A9F7A1"
+backgroundColor="#CEFACA"
+secondaryBackgroundColor="#BDD8FC"
+textColor="#20344F"
+font = "DynaPuff"
+codeFont = "JetBrains Mono:https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
